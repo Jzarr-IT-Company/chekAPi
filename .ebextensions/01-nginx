@@ -1,0 +1,7 @@
+files:
+  "/etc/nginx/conf.d/elasticbeanstalk/01_uploads.conf":
+    mode: "000644"
+    owner: root
+    group: root
+    content: |
+      client_max_body_size 5G;  # Increase the maximum upload size to 5 GB
