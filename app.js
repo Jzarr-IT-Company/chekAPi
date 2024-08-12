@@ -26,12 +26,7 @@ cloudinary.config({
 });
 
 const s3Client = new S3Client({
-    region: "ap-south-1",
-    // credentials: {
-    //     accessKeyId: 'AKIA3FLDXL2KM3EOC6FF',
-    //     secretAccessKey: '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'
-    // }
-    // region: serverConfig.awsRegion,
+    region: serverConfig.awsRegion,
     credentials: {
         accessKeyId: serverConfig.awsAccessKey,
         secretAccessKey: serverConfig.awsSecrectAccesskey
