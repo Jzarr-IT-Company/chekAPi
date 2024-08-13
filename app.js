@@ -288,7 +288,7 @@ app.post('/uploads', upload.array('files', 30), async (req, res) => {
 
 
 app.get('/', (req, res) => {
-    return res.status(200).json("hi")
+    return res.status(200).json({status:200,message:"hi"})
 })
 
 app.listen(PORT, () => {
